@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/bren.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Brenda Jehdai Gonzalez Montes</h2>   
+        <p>Estudiante del 5to cuatrimestre del TSU en Desarrollo de Software Multiplataforma en la Universidad Tecnológica del Valle de Toluca.
+
+            Apasionada por el desarrollo web y la creación de soluciones tecnológicas innovadoras. Busco oportunidades para aplicar mis conocimientos y seguir creciendo profesionalmente en el campo del desarrollo de software. Profesional altamente competente en el ámbito corporativo, reconocido por su ética de trabajo, liderazgo y habilidades interpersonales. Destaco en la gestión de equipos, resolución de problemas y creación de entornos laborales positivos. Manejo de todas las herramientas de oficina aprendizaje rapido</p>
+    </div>
+</div>
+{% endblock %}
